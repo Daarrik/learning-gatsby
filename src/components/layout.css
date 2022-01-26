@@ -8,11 +8,6 @@
   --speed: 500ms;
 }
 
-/* body {
-  background-color: var(--bg);
-  margin: 0;
-} */
-
 body,
 h1,
 p {
@@ -27,4 +22,10 @@ h1,
 a {
   /* color: var(--text-color); */
   text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

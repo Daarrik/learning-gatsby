@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSpring, animated, easings } from "react-spring";
+import Me from "../images/me.jpg";
 
 const blobs = [
   "M101.8 -107.9C133.8 -69.8 162.9 -34.9 164.4 1.5C165.9 37.9 139.9 75.9 107.9 115.1C75.9 154.2 37.9 194.6 -10.5 205.1C-58.9 215.6 -117.9 196.2 -150.5 157C-183.2 117.9 -189.6 58.9 -174.9 14.7C-160.1 -29.5 -124.3 -58.9 -91.6 -97.1C-58.9 -135.3 -29.5 -182.1 2.7 -184.8C34.9 -187.6 69.8 -146.1 101.8 -107.9",
@@ -9,27 +10,26 @@ const blobs = [
 
 const Blob = () => {
   const [stage, setStage] = useState(0);
-  const animDur = 500;
+  const animDur = 1000;
   const { blob } = useSpring({
     blob: blobs[stage],
     config: {
       duration: animDur,
-      easing: easings.linear
-    }
+      easing: easings.linear,
+    },
   });
-
 
   useEffect(() => {
     setStage(1);
-  }, [])
+  }, []);
 
   useEffect(() => {
     const id = setTimeout(() => {
-      setStage((stage+1) % 3);
-    }, animDur)
+      setStage((stage + 1) % 3);
+    }, animDur);
 
     return () => clearTimeout(id);
-  }, [stage])
+  }, [stage]);
 
   return (
     <svg
@@ -37,12 +37,14 @@ const Blob = () => {
       width="500"
       height="500"
       xmlns="http://www.w3.org/2000/svg"
-      fill="#BB004B"
     >
+      
       <animated.path
         d={blob}
         transform="translate(258.9561842708665 238.50577167339787)"
-      />
+        fill="#BB004B"
+      >
+      </animated.path>
     </svg>
   );
 };
