@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated, easings } from "react-spring";
 
 const Blob = () => {
   const [stage, setStage] = useState(0);
-
+  const animDur = 800;
   useEffect(() => {
-    const id = setTimeout(() => {
+   setTimeout(() => {
       setStage((stage + 1) % 3);
-    }, 800);
-
-    return () => clearTimeout(id);
+      console.log(stage);
+    }, animDur);
   }, [stage]);
 
   useEffect(() => {
     setStage(1);
   }, []);
 
-  const { path } = useSpring({ config: { duration: 800, }, path: stage });
+  const { path } = useSpring({ config: { duration: animDur, easing: easings.linear }, path: stage });
 
   return (
     <svg
@@ -24,10 +23,10 @@ const Blob = () => {
       height="500px"
       width="500px"
       xmlns="http://www.w3.org/2000/svg"
+      fill="#BB004B"
     >
       <animated.path
         transform="translate(258.9561842708665 238.50577167339787)"
-        fill="#BB004B"
         d={path.to({
           range: [0, 1, 2],
           output: [
