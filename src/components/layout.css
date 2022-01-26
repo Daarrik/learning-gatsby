@@ -1,0 +1,30 @@
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-height: 100px;
+  --border: 5px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+/* body {
+  background-color: var(--bg);
+  margin: 0;
+} */
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+a {
+  padding: 1rem;
+}
+
+h1,
+a {
+  /* color: var(--text-color); */
+  text-decoration: none;
+}
