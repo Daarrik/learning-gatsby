@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 
 const Blob = () => {
   const [stage, setStage] = useState(0);
-  
+
   return (
-    <div>hi</div>
+    <div>AGONY</div>
   );
 };
 
