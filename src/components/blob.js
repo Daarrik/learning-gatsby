@@ -16,7 +16,7 @@ const Blob = () => {
     setStage(1);
   }, []);
 
-  const { x } = useSpring({ config: { duration: 800, }, x: stage });
+  const { path } = useSpring({ config: { duration: 800, }, path: stage });
 
   return (
     <svg
@@ -28,7 +28,7 @@ const Blob = () => {
       <animated.path
         transform="translate(258.9561842708665 238.50577167339787)"
         fill="#BB004B"
-        d={x.to({
+        d={path.to({
           range: [0, 1, 2],
           output: [
             "M101.8 -107.9C133.8 -69.8 162.9 -34.9 164.4 1.5C165.9 37.9 139.9 75.9 107.9 115.1C75.9 154.2 37.9 194.6 -10.5 205.1C-58.9 215.6 -117.9 196.2 -150.5 157C-183.2 117.9 -189.6 58.9 -174.9 14.7C-160.1 -29.5 -124.3 -58.9 -91.6 -97.1C-58.9 -135.3 -29.5 -182.1 2.7 -184.8C34.9 -187.6 69.8 -146.1 101.8 -107.9",
