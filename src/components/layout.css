@@ -8,24 +8,27 @@
   --speed: 500ms;
 }
 
-body,
-h1,
-p {
+body {
   margin: 0;
+  background-color: var(--bg);
 }
 
 a {
-  padding: 1rem;
-}
-
-h1,
-a {
-  /* color: var(--text-color); */
+  color: var(--text-color);
   text-decoration: none;
+  padding: 1rem;
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+a svg {
+  fill: var(--text-color)
 }
