@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  padding: 0 20rem;
   background-color: var(--bg);
 }
 
@@ -27,7 +28,6 @@ a {
 .header {
   justify-content: space-between;
   height: var(--head-height);
-  padding: 0 1rem;
 }
 
 a svg {

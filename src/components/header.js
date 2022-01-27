@@ -11,7 +11,7 @@ const Header = () => {
       <nav className="center">
         {links.map((link) => (
           <a
-            id={link.name}
+            key={link.name}
             className="center"
             href={link.url}
             target="_blank"
