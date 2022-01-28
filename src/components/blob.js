@@ -4,7 +4,6 @@ import { blobs } from "../constants/blobs";
 
 const Blob = () => {
   const [stage, setStage] = useState(0);
-  // const animDur = 1000;
   const { blob } = useSpring({
     blob: blobs[stage],
     config: {

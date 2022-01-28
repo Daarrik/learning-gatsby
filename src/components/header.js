@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "gatsby";
 import { links } from "../constants/links";
 import HeaderItem from "./headeritem";
+import { Language } from "./layout";
 
 const Header = () => {
+  const lang = useContext(Language);
+
   return (
     <div className="header center">
       <Link to="/" className="test">
-        Darrik Houck
+        {lang.name}
       </Link>
       <nav className="center">
         {links.map((link) => (
