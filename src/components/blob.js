@@ -4,11 +4,11 @@ import { blobs } from "../constants/blobs";
 
 const Blob = () => {
   const [stage, setStage] = useState(0);
-  const animDur = 1000;
+  // const animDur = 1000;
   const { blob } = useSpring({
     blob: blobs[stage],
     config: {
-      duration: animDur,
+      duration: 1000,
       easing: easings.linear,
     },
   });
@@ -19,8 +19,8 @@ const Blob = () => {
 
   useEffect(() => {
     const id = setTimeout(() => {
-      setStage((stage + 1) % 3);
-    }, animDur);
+      setStage((stage + 1) % 2);
+    }, 1000);
 
     return () => clearTimeout(id);
   }, [stage]);

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { links } from "../constants/links";
+import HeaderItem from "./headeritem";
 
 const Header = () => {
   return (
@@ -10,15 +11,11 @@ const Header = () => {
       </Link>
       <nav className="center">
         {links.map((link) => (
-          <a
+          <HeaderItem 
             key={link.name}
-            className="center"
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {link.icon}
-          </a>
+            url={link.url}
+            icon={link.icon}
+          />
         ))}
       </nav>
     </div>
