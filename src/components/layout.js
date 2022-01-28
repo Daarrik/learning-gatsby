@@ -1,18 +1,16 @@
-import React, { createContext } from "react";
+import React from "react";
 import "./layout.css";
 import Header from "./header";
-import { content } from "../constants/content";
-
-export const Language = createContext(content.en);
+import Language from "./Language";
 
 const Layout = ({ children }) => {
   return (
-    <Language.Provider value={content.en}>
+    <Language>
       <div>
         <Header />
         {children}
       </div>
-    </Language.Provider>
+    </Language>
   );
 };
 

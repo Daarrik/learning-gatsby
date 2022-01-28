@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { Link } from "gatsby";
 import { links } from "../constants/links";
 import HeaderItem from "./headeritem";
-import { Language } from "./layout";
+import { LanguageContext } from "./Language";
 
 const Header = () => {
-  const lang = useContext(Language);
+  const lang = useContext(LanguageContext);
 
   return (
     <div className="header center">
