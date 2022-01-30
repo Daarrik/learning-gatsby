@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <main className="center">
+      <main className="main">
         <Blob />
       </main>
     </Layout>

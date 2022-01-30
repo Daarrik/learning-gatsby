@@ -9,15 +9,17 @@
 }
 
 body {
-  display: block;
-  max-width: 1024px;
-  margin: auto;
   background-color: var(--bg);
 }
 
 a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .center {
@@ -27,7 +29,9 @@ a {
 }
 
 .header {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   height: var(--head-height);
 }
 

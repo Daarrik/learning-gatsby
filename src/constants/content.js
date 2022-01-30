@@ -1,8 +1,8 @@
 export const content = {
   en: {
-    name: "Darrik Houck"
+    name: "Darrik Houck",
   },
   jp: {
-    name: "ハウク・デリック"
-  }
-}
+    name: "ハウク・デリック",
+  },
+};
