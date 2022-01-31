@@ -1,5 +1,5 @@
 import React, { useState, createContext } from "react";
-import content from "../constants/content";
+import { content } from "../constants/content";
 
 export const LanguageContext = createContext();
 
@@ -12,3 +12,5 @@ const LanguageProvider = ({ children }) => {
     </LanguageContext.Provider>
   );
 };
+
+export default LanguageProvider;
