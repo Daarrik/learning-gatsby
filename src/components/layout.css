@@ -39,6 +39,7 @@ a svg {
   --size: calc(var(--head-height) * 0.6);
   height: var(--size);
   width: var(--size);
+  margin-right: 10px;
   fill: var(--text-color);
   transition: 250ms;
 }
