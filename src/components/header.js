@@ -1,16 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { links } from "../constants/links";
 import HeaderItem from "./headeritem";
-import { LanguageContext } from "./Language";
 
 const Header = () => {
-  const lang = useContext(LanguageContext);
-
   return (
     <div className="main header">
       <Link to="/" className="test">
-        {lang.name}
+        ハウク・デリック
       </Link>
       <nav className="center">
         {links.map((link) => (

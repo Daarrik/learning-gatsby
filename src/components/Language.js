@@ -1,15 +1,10 @@
 import React, { useState, createContext } from "react";
-import { content } from "../constants/content";
+import content from "../constants/content";
 
-export const LanguageContext = createContext({
-  language: "en",
-  updateLanguage: () => {},
-});
+export const LanguageContext = createContext();
 
-const Language = ({ children }) => {
-  const [language, setLanguage] = useState({
-    language: "en",
-  });
+const LanguageProvider = ({ children }) => {
+  const [language, setLanguage] = useState("en");
 
   return (
     <LanguageContext.Provider value={content.en}>
@@ -17,5 +12,3 @@ const Language = ({ children }) => {
     </LanguageContext.Provider>
   );
 };
-
-export default Language;
