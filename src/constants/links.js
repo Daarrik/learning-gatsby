@@ -1,3 +1,17 @@
+/*
+TO CURIOUS VIEWERS:
+  If you know a better way to pass the SVGs,
+  PLEEEASSEE LET ME KNOW!
+  Gatsby doesn't allow the typical:
+  import { ReactComponent as Icon } from "icon.svg";
+  that create-react-app does, but it does have its
+  own plugin for similar functionality.
+  HOWEVER, I have been unable to get it to work. 
+  So again, if you know a better way, I'd love to 
+  hear it. Thank you!
+*/
+
+
 import React from "react";
 
 export const links = [
