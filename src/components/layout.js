@@ -5,10 +5,12 @@ import LanguageProvider from "./Language";
 
 const Layout = ({ children }) => {
   return (
-    <LanguageProvider>
-      <Header />
+    <div>
+      <LanguageProvider>
+        <Header />
+      </LanguageProvider>
       {children}
-    </LanguageProvider>
+    </div>
   );
 };
 

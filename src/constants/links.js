@@ -11,7 +11,6 @@ TO CURIOUS VIEWERS:
   hear it. Thank you!
 */
 
-
 import React from "react";
 
 export const links = [
