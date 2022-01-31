@@ -1,17 +1,19 @@
-import React, { useState, createContext, useContext } from "react";
+import React, { useState, createContext } from "react";
 import { content } from "../constants/content";
 
 export const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(content.jp);
+  const [language, setLanguage] = useState(0);
 
   const switchLang = () => {
-    setLanguage("jp");
+    setLanguage((language+1) % 2);
   };
 
   return (
-    <LanguageContext.Provider value={{ language, switchLang }}>
+    <LanguageContext.Provider
+      value={{ language: language === 0 ? content.en : content.jp, switchLang }}
+    >
       {children}
     </LanguageContext.Provider>
   );

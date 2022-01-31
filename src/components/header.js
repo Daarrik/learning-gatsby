@@ -16,6 +16,7 @@ const Header = () => {
         {links.map((link) => (
           <HeaderItem key={link.name} url={link.url} icon={link.icon} />
         ))}
+        <button onClick={() => switchLang()}>test</button>
       </nav>
     </div>
   );
