@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderItem = ({ url, icon }) => {
+const NavItem = ({ url, icon }) => {
   return (
     <a className="center" href={url} target="_blank" rel="noopener noreferrer">
       {icon}
@@ -8,4 +8,4 @@ const HeaderItem = ({ url, icon }) => {
   );
 };
 
-export default HeaderItem;
+export default NavItem;

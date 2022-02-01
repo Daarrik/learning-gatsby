@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "gatsby";
-import { links } from "../constants/links";
-import HeaderItem from "./headeritem";
 import { LanguageContext } from "./LanguageProvider";
+import Nav from "./nav";
 
 const Header = () => {
   const { language, switchLang } = useContext(LanguageContext);
@@ -12,12 +11,9 @@ const Header = () => {
       <Link to="/" className="test">
         {language.name}
       </Link>
-      <nav className="center">
-        {links.map((link) => (
-          <HeaderItem key={link.name} url={link.url} icon={link.icon} />
-        ))}
-        <button onClick={() => switchLang()}>test</button>
-      </nav>
+      {/* Move this button somewhere else before final */}
+      <button onClick={() => switchLang()}>switch lang</button>
+      <Nav />
     </div>
   );
 };

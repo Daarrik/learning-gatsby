@@ -2,15 +2,15 @@ import React from "react";
 import "./layout.css";
 import Header from "./header";
 import LanguageProvider from "./LanguageProvider";
+import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <LanguageProvider>
-        <Header />
-      </LanguageProvider>
+    <LanguageProvider>
+      <Header />
       {children}
-    </div>
+      <Footer />
+    </LanguageProvider>
   );
 };
 
