@@ -1,6 +1,6 @@
 import React from "react";
 import { links } from "../constants/links";
-import NavItem from "./navitem";
+import NavItem from "./NavItem";
 
 const Nav = () => {
   return (

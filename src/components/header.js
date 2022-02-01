@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageProvider";
 import { Link } from "gatsby";
-import Nav from "./nav";
+import Nav from "./Nav";
 
 const Header = () => {
   const { language, switchLang } = useContext(LanguageContext);
