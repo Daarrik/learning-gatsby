@@ -1,0 +1,49 @@
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --head-height: 60px;
+  --border: 5px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--head-height);
+}
+
+a svg {
+  --size: calc(var(--head-height) * 0.6);
+  height: var(--size);
+  width: var(--size);
+  margin-right: 10px;
+  fill: var(--text-color);
+  transition: 250ms;
+}
+
+a:hover svg {
+  filter: brightness(1.2);
+}
