@@ -3,6 +3,7 @@ import LanguageProvider from "../components/LanguageProvider";
 import "./index.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ChngLang from "../components/ChngLang";
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer />
+      <ChngLang />
     </LanguageProvider>
   );
 };

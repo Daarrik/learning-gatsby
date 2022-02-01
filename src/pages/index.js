@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../components/LanguageProvider";
-import Blob from "../components/blob";
+import Blob from "../components/Blob";
 
 const IndexPage = () => {
   const { language } = useContext(LanguageContext); // language is undefined (??)

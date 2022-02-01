@@ -4,15 +4,13 @@ import { Link } from "gatsby";
 import Nav from "./Nav";
 
 const Header = () => {
-  const { language, switchLang } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
 
   return (
     <div className="main header">
       <Link to="/" className="test">
         {language.name}
       </Link>
-      {/* Move this button somewhere else before final */}
-      <button onClick={() => switchLang()}>switch lang</button>
       <Nav />
     </div>
   );
