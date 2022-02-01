@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "gatsby";
 import { links } from "../constants/links";
 import HeaderItem from "./headeritem";
-import { LanguageContext } from "./Language";
+import { LanguageContext } from "./LanguageProvider";
 
 const Header = () => {
   const { language, switchLang } = useContext(LanguageContext);

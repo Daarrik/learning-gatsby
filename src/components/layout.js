@@ -1,7 +1,7 @@
 import React from "react";
 import "./layout.css";
 import Header from "./header";
-import LanguageProvider from "./Language";
+import LanguageProvider from "./LanguageProvider";
 
 const Layout = ({ children }) => {
   return (
