@@ -7,6 +7,8 @@ const IndexPage = () => {
   // const { language } = useContext(LanguageContext); // language is undefined (??)
 
   return (
+    // CAN'T HAVE LAYOUT AS PARENT. CONTEXT MUST BE PASSED DOWN VIA ROOT ELEMENT
+    // STILL FINDING ROOT ELEMENT
     <Layout>
       <main className="main center">
         <Blob />
