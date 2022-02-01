@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Link } from "gatsby";
 import { LanguageContext } from "./LanguageProvider";
+import { Link } from "gatsby";
 import Nav from "./nav";
 
 const Header = () => {

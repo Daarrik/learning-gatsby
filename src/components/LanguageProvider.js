@@ -4,15 +4,15 @@ import { content } from "../constants/content";
 export const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(0);
+  const [language, setLanguage] = useState(true);
 
   const switchLang = () => {
-    setLanguage((language+1) % 2);
+    setLanguage(!language);
   };
 
   return (
     <LanguageContext.Provider
-      value={{ language: language === 0 ? content.en : content.jp, switchLang }}
+      value={{ language: language ? content.en : content.jp, switchLang }}
     >
       {children}
     </LanguageContext.Provider>

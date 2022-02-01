@@ -1,7 +1,7 @@
 import React from "react";
+import LanguageProvider from "./LanguageProvider";
 import "./layout.css";
 import Header from "./header";
-import LanguageProvider from "./LanguageProvider";
 import Footer from "./footer";
 
 const Layout = ({ children }) => {

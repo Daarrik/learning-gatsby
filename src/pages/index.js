@@ -1,8 +1,11 @@
-import React from "react";
-import Blob from "../components/blob";
+import React, { useContext } from "react";
+import { LanguageContext } from "../components/LanguageProvider";
 import Layout from "../components/layout";
+import Blob from "../components/blob";
 
 const IndexPage = () => {
+  // const { language } = useContext(LanguageContext); // language is undefined (??)
+
   return (
     <Layout>
       <main className="main center">
