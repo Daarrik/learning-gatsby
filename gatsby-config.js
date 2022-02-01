@@ -3,10 +3,10 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    `gatsby-plugin-layout`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: { rule: { include: /assets/ } },
     },
-    `gatsby-plugin-layout`
   ],
 };
