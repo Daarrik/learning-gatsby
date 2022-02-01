@@ -50,6 +50,8 @@ a:hover svg {
 
 .lang-button {
   position: absolute;
+  height: 2rem;
+  width: 2rem;
   bottom: 5px;
   right: 5px;
 }

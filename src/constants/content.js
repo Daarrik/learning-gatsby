@@ -1,12 +1,12 @@
 export const content = {
   en: {
     name: "Darrik Houck",
-    button: "Change language",
+    button: "EN",
     main: "Hi!",
   },
   jp: {
     name: "ハウク・デリック",
-    button: "言語を変える",
+    button: "JP",
     main: "こんいちは！",
   },
 };
