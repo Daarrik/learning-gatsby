@@ -2,11 +2,11 @@ export const content = {
   en: {
     name: "Darrik Houck",
     button: "EN",
-    main: "Hi!",
+    main: "Hello!",
   },
   jp: {
     name: "ハウク・デリック",
     button: "JP",
-    main: "こんいちは！",
+    main: "こんいちは",
   },
 };

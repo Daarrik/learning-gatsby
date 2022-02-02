@@ -1,5 +1,5 @@
 :root {
-  --bg: #242526;
+  --bg: #001220;
   --bg-accent: #484a4d;
   --text-color: #dadce1;
   --head-height: 60px;
@@ -15,6 +15,11 @@ body {
 a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.name {
+  margin-left: 10px;
+  color: var(--text-color);
 }
 
 .main {
@@ -39,7 +44,7 @@ a svg {
   --size: calc(var(--head-height) * 0.6);
   height: var(--size);
   width: var(--size);
-  margin-right: 10px;
+  margin: 0 5px 0 5px;
   fill: var(--text-color);
   transition: 250ms;
 }
