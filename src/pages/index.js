@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <main className="main">
       <section className="center">
-        <button>does nothing</button>
+        <Blob />
       </section>
       <section className="center">
         <h1 className="name">{language.main}</h1>
